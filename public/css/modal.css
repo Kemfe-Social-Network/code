@@ -1,0 +1,134 @@
+/* The Modal (background) */
+#kemfeModaLPopup.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 70px;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+#kemfeModaLPopup .modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  max-width: 1200px;
+  overflow: hidden;
+  text-align: center;
+  max-height: 750px;
+    border: 0px solid rgba(0,0,0,.2);
+}
+
+@media only screen and (max-width: 600px) {
+  #kemfeModaLPopup .modal-content {
+      width: 100%;
+  }
+}
+
+/* The Close Button */
+#kemfeModaLPopup .close {
+  color: white;
+  position: absolute;
+  top: 6
+  40px;
+  right: 25px;
+  font-size: 25px;
+  font-weight: lighter;
+  z-index: 900;
+  background: red;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 30px;
+  width:  30px;
+  text-align: center;
+  line-height: 22px;
+}
+
+#kemfeModaLPopup .close:hover,
+#kemfeModaLPopup .close:focus {
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+#kemfeModaLPopup .mySlides {
+  display: none;
+
+}
+#kemfeModaLPopup img{
+  max-height: 100%;
+}
+
+
+/* Next & previous buttons */
+#kemfeModaLPopup .prev,
+#kemfeModaLPopup .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+#kemfeModaLPopup .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#kemfeModaLPopup .prev:hover,
+#kemfeModaLPopup .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+#kemfeModaLPopup .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+#kemfeModaLPopup .caption-container {
+  text-align: center;
+  background-color: rgba(0, 105, 217, 0.4);
+  padding: 2px 16px;
+  color: white;
+
+}
+
+#kemfeModaLPopup img.demo {
+  opacity: 0.6;
+}
+
+#kemfeModaLPopup .active,
+#kemfeModaLPopup .demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
